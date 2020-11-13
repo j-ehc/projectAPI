@@ -1,48 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Instructional</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>projectAPI</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="style/accordian.pack.js"></script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
+<body onload="new Accordian('basic-accordian',5,'header_highlight');">
+  <div id="logo"><h1>TBD Site for projectAPI</h1></div>
+  <div id="basic-accordian" >
+    <div id="test-header" class="accordion_headings header_highlight">Home</div>
+    <div id="test-content">
+      <div class="accordion_child">
+        <h1>Welcome to the mess</h1>
+        <p>This site will eventually utilize an API :-)</p>
+        <h2>Browser Compatibility</h2>
+        <p>This template has been tested in the following browsers:</p>
+        <ul>
+          <li>Internet Explorer 8</li>
+          <li>FireFox 3</li>
+          <li>Google Chrome 13</li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+      </div>
     </div>
-</nav>
-<textarea>
-    Click the button to go to take the blue pill.
-</textarea>
-<button type="button" class="btn btn-dark">Click Here</button>
+    <div id="test1-header" class="accordion_headings">A Page</div>
+    <div id="test1-content">
+      <div class="accordion_child">
+        <p>Some text</p>
+        <h2>A table to use</h2>
+        <table style="width:100%; border-spacing:0;">
+          <tr><th>Item</th><th>Description</th></tr>
+          <tr><td>Item 1</td><td>Description of Item 1</td></tr>
+          <tr><td>Item 2</td><td>Description of Item 2</td></tr>
+        </table>
+      </div>
+    </div>
+    <div id="test2-header" class="accordion_headings">Another Page</div>
+    <div id="test2-content">
+      <div class="accordion_child">
+        <h1>Image Layout</h1>
+        <p>images can be placed on the left, in the center or on the right:</p>
+        <span class="left"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <p>
+          More text.
+        </p>
+        <span class="center"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <span class="right"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <p>
+          More text.
+        </p>
+      </div>
+    </div>
+    <div id="test3-header" class="accordion_headings">And Another Page</div>
+    <div id="test3-content">
+      <div class="accordion_child">
+        <p>Some more text.</p>
+        <h2>Some List Examples</h2>
+        <p>An unordered list:</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+        <p>An ordered list:</p>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </div>
+    </div>
+    <div id="test4-header" class="accordion_headings">Contact Us</div>
+    <div id="test4-content">
+      <div class="accordion_child">
+        <p>Contact form might look:</p>
+        <form action="#" method="post">
+          <div class="form_settings">
+            <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
+            <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
+            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit" /></p>
+          </div>
+        </form>
+        <p><br /><br />NOTE: A contact form such as this would require a way of emailing the input to an email address.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
